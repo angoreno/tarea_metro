@@ -74,6 +74,11 @@ public class usuario {
 			} else {
 				estacion.imprime_estacion_rev(combi2, estacion_f - 1, linea_f);
 			}
+/*
+ * para realizar segunda combinacion se debe crear una combi 3 y meter
+ * dentro del if en caso de no coincidir con estacion de inicio ni con
+ * estacion de fin, se esta forma se crea la ruta y se imprime nuevamente
+ */
 
 		}
 
