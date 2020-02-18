@@ -243,8 +243,6 @@ public class combinaciones {
 		this.linea_fin = lfin;
 		this.estacion_inicio = einicia;
 		this.estacion_fin = efin;
-		System.out.println(this.estacion_inicio + "|| linea inicio " + this.linea_inicio + "||" + this.estacion_fin
-				+ "||linea fon " + this.linea_fin);
 
 	}
 
@@ -278,12 +276,10 @@ public class combinaciones {
 
 		for (int i = 0; i < 30; i++) {
 			if (linea.equals(combinaciones[this.linea_inicio][i])) {
-				System.out.println("combinacion " + linea);
 				pos_combi = i;
 
 			}
 		}
-		System.out.println(linea + " posicion: " + pos_combi);
 
 		return pos_combi;
 	}

@@ -63,20 +63,16 @@ public class usuario {
 
 			if (estacion_i < combi1) {
 				estacion.imprime_estacion(estacion_i, combi1 + 1, linea_i);
-				System.out.println("****linea 1****");
 
 			} else {
 				estacion.imprime_estacion_rev(estacion_i, combi1 - 1, linea_i);
-				System.out.println("****linea 2****");
 			}
 
 			if (combi2 < estacion_f) {
 				estacion.imprime_estacion(combi2, estacion_f + 1, linea_f);
-				System.out.println("****linea 1****");
 
 			} else {
 				estacion.imprime_estacion_rev(combi2, estacion_f - 1, linea_f);
-				System.out.println("****linea 2****");
 			}
 
 		}

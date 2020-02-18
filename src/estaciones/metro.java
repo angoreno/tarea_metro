@@ -240,13 +240,18 @@ public class metro {
 
 	public int muestra_estacion() {// busca la estacion dentro de la matriz
 		nEstacion = 0;
-		nLinea = 0;
+		nLinea = 9;
 
-		for (int i = 0; i < 30; i++) {
-			for (int j = 0; j < 7; j++) {
+		int i = 0;
+		int j = 0;
+
+		for (i = 0; i < 30; i++) {
+			for (j = 0; j < 7; j++) {
 				if (this.estacion.equals(estaciones[j][i])) {
 					nEstacion = i;
 					nLinea = j;
+					i = 30;
+					j = 7;
 				}
 			}
 		}
@@ -255,6 +260,9 @@ public class metro {
 	}
 
 	public int muestra_linea() {// duvuelve la linea
+
+		System.out.println(nEstacion);
+		System.out.println(nLinea);
 		return nLinea;
 	}
 
